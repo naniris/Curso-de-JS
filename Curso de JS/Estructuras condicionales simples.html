@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras condicionales simples</title>
+
+    <script>
+    
+    setTimeout(Calificacion, 1000);
+
+    function Calificacion() {
+       
+        document.write('<h1>Ingresar 3 notas de un alumno, si el promedio es mayor o igual a 70. Mostrar un mensaje de que esta aprobado</h1>');
+        var suma;
+        var resultado;
+        nota1 = parseInt(prompt('Dijite la nota 1'));
+        nota2 = parseInt(prompt('Dijite la nota 2'));
+        nota3 = parseInt(prompt('Dijite la nota 3'));
+        suma = nota1 + nota2 + nota3;
+        resultado = parseInt(suma/3);
+
+        if (resultado >= 70) {
+            document.write('El alumno esta aprobado con '+ resultado + '</br>' + '<hr>');
+        }
+        else{
+            document.write('Echale mas ganas mijo xD' + '</br>' + '<hr>' );
+        }
+
+        setTimeout(ConfirmarClave, 1000); 
+    }
+
+    function ConfirmarClave(clave1, clave2){
+        document.write('</hr>');
+        document.write('<h1>Confirmar si las claves son iguales</h1>');
+        clave1 = parseInt(prompt('Dijite la clave 1'));
+        clave2 = parseInt(prompt('Dijite la clave 2'));
+
+        if (clave1 ===clave2) {
+            document.write('Las claves son iguales');
+        } else {
+            document.write('Las claves no coinciden');
+        }
+    }
+
+    
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

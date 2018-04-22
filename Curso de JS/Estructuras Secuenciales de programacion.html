@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras secuenciales de programación</title>
+
+    <script>
+    
+    setTimeout(PerimetroCuadrado, 1000);
+    
+    function  PerimetroCuadrado(lado){
+        document.write('<h1>Perimetro de un Cuadrado</h1>'+ ('<br/>'))
+        lado = prompt('Dijite el lado de un cuadrado');
+        lado = parseInt(lado * 4);
+        document.write('El perimetro del cuadrado es: '+ lado + ('<br/>') +('<hr>'));
+        setTimeout(SumaMultiplicacion, 1000);
+    }
+
+    function SumaMultiplicacion (numero1, numero2, numero3, numero4, suma, multiplicacion){
+        document.write('<h1>Suma de dos numeros y multiplicación de dos numeros</h1>'+ ('<br/>'));
+        numero1 = prompt('Dijite el numero 1');
+        numero2 = prompt('Dite el numero 2');
+        numero3 = prompt('Dijite el numero 3');
+        numero4 = prompt('Dijite el numero 4');
+        resultado1 = parseInt(numero1) + parseInt(numero2);
+        multiplicacion = parseInt(numero3) * parseInt(numero4);
+        document.write('La suma del numero 1 y el numero 2 es: ' + resultado1 + ('<br/>'));
+        document.write('La multiplicación del numero 3 y el numero 4 es: '+ multiplicacion + ('<br/>')+ ('<hr>'));
+        setTimeout(SumaMultiplicacion2, 1000);
+    }
+
+    function SumaMultiplicacion2 (numero1, numero2, numero3, numero4, suma, multiplicacion){
+        document.write('<h1>Suma de los 4 numeros y multiplicación de los 4 numeros</h1>'+ ('<br/>'));
+        numero1 = prompt('Dijite el numero 1');
+        numero2 = prompt('Dite el numero 2');
+        numero3 = prompt('Dijite el numero 3');
+        numero4 = prompt('Dijite el numero 4');
+        suma = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero4);
+        multiplicacion = parseInt(numero1) * parseInt(numero2) * parseInt(numero3) * parseInt(numero4);
+        document.write('La suma de los 4 numeros es: '+ suma + ('<br/>'));
+        document.write('La multiplicación de los 4 numeros es: '+ multiplicacion + ('<br/>') + ('<hr>'));
+        setTimeout(CompraDeProducto, 1000);
+    }
+
+    function CompraDeProducto(precioArticulo, cantidadAbonado, DineroAbonar) {
+        document.write('<h1>desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad que lleva el cliente</h1>' + ('<br/>'));
+        precioArticulo = prompt('Dijite el precio del producto');
+        cantidadAbonado = prompt('Dijite la cantidad de dinero abonado');
+        DineroAbonar = parseInt(precioArticulo) * parseInt(cantidadAbonado);
+        document.write('Usted debe de abonar la cantidad de: ' + '$' + DineroAbonar + ' pesos');
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
